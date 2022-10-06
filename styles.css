@@ -1,0 +1,285 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+    background-color: rgba(122, 191, 191, .5)
+}
+
+body {
+    width: 414px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+}
+
+header {
+    height: 350px;
+}
+
+menu { 
+    list-style: none;
+    color: #Eb5428;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-inline-start: 0;
+}
+
+
+menu a {
+    text-decoration: none;
+    color: #Eb5428;
+    font-size: 17px;
+}
+
+
+#menu li, #social li {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    list-style: none;
+}
+ 
+img {
+    width: 414px;
+}
+
+h1 {
+    font-size: 45px;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    color: #0D0D0D;
+    text-align: center;
+    padding-top: 150px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    color: #0D0D0D;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    color: #0D0D0D;
+}
+
+nav {
+    width: 414px;
+    height:65px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    margin: -10px;
+    z-index: 1;
+}
+
+nav h2 {
+    visibility: hidden;
+    max-height: 0;
+}
+
+figure:not ul {
+    position: absolute;
+    top: 0;
+}
+
+ul {
+    list-style-type: square;
+}
+
+nav a {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    color: #Eb5428;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+    overflow:hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+nav li {
+    color: #Eb5428;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    display: inline;
+}
+
+nav li:hover {
+    background-color:#Eb5428;
+    color:#ffffff;
+}
+
+.searchbar {
+    background-color: #F2F2F2;
+    text-align: center;
+    padding-top: 20px;
+}
+
+button {
+    float: right;
+}
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+div input { 
+    display: inline;
+    height: 40px;
+}
+
+input:checked ~ ul {
+    max-height: 500px;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: -14px -10px 0 -10px;
+    z-index: 1;
+    width: 414px;
+}
+
+form {
+    display: flex;
+}
+
+form input {
+    display: inline;
+    height: 40px;
+}
+
+[href="#home"] {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    padding: 20px;
+    background-color: #365782;
+}
+
+[href="#user"] {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    padding: 20px;
+    background-color: #0D0D0D;
+}
+
+label { 
+    cursor: pointer;
+    display: block;
+    padding: 30px 20px;
+    position: relative;
+    user-select: none;
+    margin-top: -75px;
+}
+
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color 0.2 ease-out;
+    width: 18px;
+}
+
+label span:before {
+    top: 5px;
+}
+
+label span:after {
+    top: -5px;
+}
+
+input {
+    display: none;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px; 
+    color: #0D0D0D;
+    padding: 10px;
+}
+
+#details {
+    padding: 10px;
+}
+
+dt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0D0D0D
+}
+
+dd {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #0D0D0D
+}
+
+figcaption {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: #Eb5428;
+}
+
+aside {
+    background-color: #7ABFBF;
+  
+}
+
+
+aside h3, aside p {
+    padding: 0;
+    margin: 0;
+}
+#sides {
+    background-color: #7ABFBF;
+    padding-left: 20px;
+}
+
+#sides p + p {
+    font-weight: bold;
+}
+
+#sides img {
+    width:100px;
+}
+
+#social {
+    display: flex;
+}
+
+#social a {
+    text-decoration: none;
+    color: #Eb5428;
+    font-size: 20px;
+    padding: 0;
+}
+
+#cheesington {
+    width: 200px;
+    text-align: center;
+}
+
+footer p{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+footer h3 {
+    visibility: hidden;
+}
+
+#goodeats figcaption {
+    color :#0D0D0D;
+}
+
+aside figcaption {
+    color: #0D0D0D;
+}
