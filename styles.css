@@ -55,14 +55,6 @@
      display: flex;
      justify-content: space-evenly;
 }
- menu a {
-     text-decoration: none;
-     color: #Eb5428;
-     font-size: 17px;
-     font-family: 'Bebas Neue', cursive;
-     display: flex;
-     justify-content: space-evenly;
-}
  menu li {
      display: flex;
      flex-direction: column;
@@ -81,6 +73,7 @@
      padding: 0;
      background-color: transparent;
      text-transform: uppercase;
+     font-family: 'Bebas Neue',cursive;
 }
  menu button:hover {
      cursor: pointer;
@@ -115,25 +108,22 @@
  .home button {
      visibility: hidden;
 }
- nav a {
-     color: #0D0D0D;
-     display: block;
-     text-decoration: none;
-     position: fixed;
-     top: 0;
-     padding: 10px;
-     margin-top: 30px;
-     font-family: 'Bebas Neue', cursive;
-     font-size: 16px;
-     font-weight: bold;
+.user button {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
 }
- nav a:hover {
+ nav button:hover {
      cursor: pointer;
      background-color:#eb5428;
      color: #f2f2f2;
 }
  .home button {
      padding: 30px;
+}
+.hamburger button {
+    font-family: 'Bebas Neue',cursive;
+    font-size: 16px;
+    left: 10px;
 }
  [href="#hamburger"] {
      padding-left: 20px;
@@ -289,9 +279,7 @@
      border: 2px solid #Eb5428;
      height: 40px;
 }
- #site-search:placehoder-shown {
-     font-size: 12px;
-}
+
  li {
      font-family: 'Montserrat', sans-serif;
      font-size: 16px;
@@ -347,7 +335,7 @@
      margin: 10px 0;
      display: grid;
      grid-template-columns: 1fr 1fr 2fr;
-     grid-template-rows: repeat (4 2em);
+     grid-template-rows: repeat(4, 2em);
 }
  figure:hover {
      background-color: #EB5428;
@@ -395,7 +383,7 @@
      justify-content: space-evenly;
      padding: 0;
 }
- #connect a {
+ #connect button {
      text-decoration: none;
      color: #Eb5428;
      font-size: 17px;
@@ -605,7 +593,7 @@
      nav {
          width: 768px;
     }
-     nav a {
+     nav button {
          display: flex;
          flex-direction: row;
          top: 135px;
@@ -619,7 +607,7 @@
          width: 50px;
          justify-content: center;
     }
-     nav a:hover {
+     nav button:hover {
          color:#f2f2f2;
          background-color: transparent;
     }
@@ -696,7 +684,7 @@
          justify-content: space-between;
          width: 50px;
     }
-     nav a {
+     nav button {
          display: flex;
          flex-direction: row;
          justify-content: space-between;
